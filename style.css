@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0d10;
+    color: #a0a5b5;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #5c6275;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #2a2e3d;
+}
+
+.status {
+    margin-top: 30px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #8b5cf6;
+    border-radius: 50%;
+}
+
+.main-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 48px;
+    color: #f3f4f6;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.tagline {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #818898;
+    max-width: 90%;
+}
+
+.tagline a {
+    color: #9ca3af;
+}
+
+.scroll-text {
+    margin-top: 40px;
+    font-size: 11px;
+    font-family: 'Fira Code', monospace;
+    color: #4b5563;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #1f2430;
+    margin: 40px 0;
+}
+
+/* Sections */
+.section-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sub-label, .log-label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #4b5563;
+}
+
+.about-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #818898;
+}
+
+.about-text strong {
+    color: #f3f4f6;
+}
+
+.info-block {
+    margin-top: 30px;
+}
+
+.info-block h3 {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #6366f1;
+    margin-bottom: 12px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border: 1px solid #2a2e3d;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #d1d5db;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.light-text {
+    font-size: 13px;
+    color: #818898;
+    line-height: 1.5;
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-details p {
+    font-size: 13px;
+    color: #818898;
+    margin-bottom: 5px;
+}
+
+.qr-code {
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.qr-code img {
+    width: 90px;
+    height: 90px;
+    display: block;
+}
+
+.qr-code span {
+    font-size: 8px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Projects Section */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.serif-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #f3f4f6;
+}
+
+.project-header h3 {
+    color: #f3f4f6;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.badge {
+    border: 1px solid #374151;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    color: #9ca3af;
+    vertical-align: middle;
+}
+
+/* Terminal Styling */
+.terminal-box {
+    background-color: #050505;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    color: #22c55e;
+    line-height: 1.4;
+}
+
+.term-green { color: #22c55e; }
+.term-title { color: #22c55e; text-align: center; font-weight: bold; }
+.term-yellow { color: #eab308; }
+.term-cyan { color: #06b6d4; }
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
