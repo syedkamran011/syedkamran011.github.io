@@ -5,13 +5,20 @@
 }
 
 body {
-    background-color: #0c0d10;
-    color: #a0a5b5;
-    font-family: 'Inter', sans-serif;
-    padding: 20px 16px;
-    max-width: 500px;
-    margin: 0 auto;
-}
+    background: radial-gradient(circle at 15% 15%, #3b1e6b 0%, transparent 35%), radial-gradient(circle at 85% 25%, #1a2f5e 0%, transparent 40%), radial-gradient(circle at 50% 90%, #2a1547 0%, transparent 45%), radial-gradient(1px 1px at 20px 30px, #ffffff, transparent), radial-gradient(1px 1px at 90px 120px, #ffffff, transparent), radial-gradient(1px 1px at 160px 60px, #ffffff, transparent), radial-gradient(2px 2px at 220px 180px, #ffffff, transparent), radial-gradient(1px 1px at 280px 40px, #ffffff, transparent), #05050f;
+background-attachment: fixed;
+color: #d4d8f0;
+font-family: 'Inter', sans-serif;
+padding: 20px 16px;
+max-width: 500px;
+margin: 0 auto;
+
+    
+   
+    
+    
+    
+
 
 /* Navigation */
 .navbar {
